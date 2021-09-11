@@ -1,0 +1,22 @@
+{
+    "name":"Ticket Extension",
+    "description":"Ticket Extension System!",
+    "version":"1.0",
+    "manifest_version":2,
+    "browser_action": {
+        "default_title": "tiket system",
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["file:///*"],
+            "js": ["js/contents.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "permissions": [
+        "storage"
+    ]
+}
