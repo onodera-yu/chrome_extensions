@@ -1,0 +1,9 @@
+body {
+    width: 300px;
+    height: 500px;
+    resize: both;
+}
+
+input {
+    display: block;
+}
